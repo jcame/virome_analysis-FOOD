@@ -37,6 +37,11 @@ LINK1
 LINk2
 ```
 
+- Nextera adaptors & PhiX Illumina control sequences
+```
+LINK1
+LINk2
+```
 
 
 The workflow contains 6 wrappers dealing with the following steps:
