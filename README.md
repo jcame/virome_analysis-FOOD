@@ -54,7 +54,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 ```
 
 
-## The workflow contains 6 steps:
+## The workflow contains 6 steps, below a brief description of their rationale:
 
 #### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
