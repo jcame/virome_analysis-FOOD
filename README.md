@@ -12,6 +12,7 @@ To be able to implementing this workflow you will need access to:
 The workflow contains 6 wrappers dealing with the following steps:
 
 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
+
 --- Required packages:
 ```
 conda install -c bioconda trimmomatic
@@ -21,16 +22,13 @@ conda install -c bioconda fastq-pair
 conda install -c bioconda spades  
 ```
 
-2) QC of assembled contigs + vOTUs labeling
+2) QC of assembled contigs + vOTUs labeling (This wrapper supports ONLY Linux systems - basically because 'Virsorter2' is not supported in VMs or MAC)
+
 --- Required packages:
 ```
-conda install -c bioconda trimmomatic
-conda install -c bioconda seqkit 
-conda install -c bioconda bbmap 
-conda install -c bioconda fastq-pair 
-conda install -c bioconda spades  
-conda install -c bioconda nanofilt
-conda install -c bioconda blast
+conda install -c bioconda seqtk
+conda install -c bioconda virsorter 
+
 ```
 
 3) Taxonomy annotation of vOTUs
