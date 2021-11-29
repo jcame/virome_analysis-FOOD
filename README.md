@@ -2,7 +2,13 @@
 
 ## Introduction
 
-This is a respository that contains a general implementation-workflow for virome analyses at UCPH-FOOD.
+This is a respository that contains a general workflow for virome analyses at UCPH-FOOD.
+To be able to implementing this workflow you will need access to:
+
+- Access to a UNIX-like environment terminal (w/ administrator rights)
+- R-base
+
+
 The workflow contains 6 wrappers dealing with the following steps:
 
 1) Fastq QC + reads labeling + de-novo assembly
