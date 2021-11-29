@@ -7,7 +7,7 @@ To be able to implementing this workflow you will need access to:
 
 - Linux system (e.g. Ubuntu) (w/ administrator rights)
 - :: Anaconda version 3
-- R-base version 4.1.1 or higher | make sure that "tidyverse" is installed
+- R-base version 4.1.1 or higher | make sure the "tidyverse" package is installed
 
 To implement the workflow, you will have to install the following dependencies:
 ```
