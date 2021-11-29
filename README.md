@@ -54,13 +54,13 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 ```
 
 
-## The workflow contains 6 wrappers dealing with the following steps:
+## The workflow contains 6 steps:
 
 #### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
 #### 2) QC of assembled contigs + vOTUs labeling
 
-- *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV), our benchmark shows that VirSorter2 outcompetes any other tool, as we report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
+- *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV), our benchmark shows that VirSorter2 outcompetes any other tool, as we recently report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
 
 #### 3) Taxonomy annotation of vOTUs
 
@@ -86,4 +86,7 @@ wget https://www.dropbox.com/s/f3o21j2qiw0sz3a/NXT062_IDA222_S222_R2_001.fastq?d
 Next, 
 
 
+
+
+# Note: At this moment the pipeline is based on bash wrappers, but I do hope to provide a conda environment for easier deployment (just need to find the time).
 
