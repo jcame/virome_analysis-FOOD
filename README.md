@@ -49,7 +49,7 @@ LINk2
 ```
 
 
-The workflow contains 6 wrappers dealing with the following steps:
+## The workflow contains 6 wrappers dealing with the following steps:
 
 #### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
