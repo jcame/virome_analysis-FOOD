@@ -25,6 +25,13 @@ usearch############
 
 In addition, you should download the following customized databases:
 
+- Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from Anelloviruses (Circoviridae) derived from our recent manuscript: https://doi.org/10.1101/2021.07.02.450849 
+```
+
+```
+
+
+
 
 The workflow contains 6 wrappers dealing with the following steps:
 
@@ -38,15 +45,8 @@ The workflow contains 6 wrappers dealing with the following steps:
 
 5) vOTUs abundance stats
 
---- Required packages:
-```
-conda install -c bioconda bowtie 
-conda install -c bioconda samtools
-```
-
 6) Integrated results
 
---- No Required packages: it is just formatting and calculations
 
 
 
