@@ -1,4 +1,4 @@
-# vapline v2.0 (Virome Analysis Pipeline 2.0)
+# Vapline v2.0 (Virome Analysis Pipeline 2.0)
 
 ## Introduction (IN DEVELOPMENT### not ready yet)
 
