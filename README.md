@@ -31,13 +31,13 @@ LINK1
 LINk2
 ```
 
-- A DB of CRISPRs spacers and tRNAs predicted from XXX () & YYY
+- A DB of CRISPRs spacers and tRNAs predicted from species-level genome bins (SGBs) described in Pasolli et al. 2019 (https://doi.org/10.1016/j.cell.2019.01.001) & metagenome-assembled genomes (MAGs) described in Castro-Mejía et al. 2021 (https://doi.org/10.1101/2021.09.01.458531) 
 ```
 LINK1
 LINk2
 ```
 
-- Nextera adaptors & PhiX Illumina control sequences
+- Nextera adaptors/transposases & PhiX Illumina control sequences
 ```
 LINK1
 LINk2
