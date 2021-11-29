@@ -25,9 +25,10 @@ usearch############
 
 In addition, you should download the following customized databases:
 
-- Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from Anelloviruses (Circoviridae) derived from our recent manuscript: https://doi.org/10.1101/2021.07.02.450849 
+- Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from Anelloviruses (Circoviridae) derived from our recent manuscript Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
 ```
-
+LINK1
+LINk2
 ```
 
 
