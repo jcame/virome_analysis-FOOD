@@ -9,7 +9,12 @@ To be able to implementing this workflow you will need access to:
 - :: Anaconda version 3
 - R-base version 4.1.1 or higher | make sure the "tidyverse" package is installed
 
-To implement the workflow, you will have to install the following dependencies and create a "bin" directory:
+To implement the workflow, clone this repository:
+```
+git clone https://github.com/jcame/virome_analysis-FOOD.git
+```
+
+Then install the following dependencies
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
