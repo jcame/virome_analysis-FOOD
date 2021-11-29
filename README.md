@@ -9,8 +9,10 @@ To be able to implementing this workflow you will need access to:
 - :: Anaconda version 3
 - R-base version 4.1.1 or higher | make sure the "tidyverse" package is installed
 
-To implement the workflow, you will have to install the following dependencies:
+To implement the workflow, you will have to install the following dependencies and create a "bin" directory:
 ```
+mkdir bin
+
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
 conda install -c bioconda bbmap 
@@ -20,7 +22,9 @@ conda install -c bioconda seqtk
 conda install -c bioconda virsorter 
 conda install -c bioconda bowtie 
 conda install -c bioconda samtools
-usearch############
+
+usearch  #Download the free version of usearch (e.g. version 11) | https://www.drive5.com/usearch/download.html | make usearch is executable by running the following line:
+chmod 775 usearch*
 ```
 
 In addition, you should download the following customized databases:
