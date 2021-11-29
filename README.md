@@ -25,6 +25,7 @@ conda install -c bioconda samtools
 
 usearch  #Download the free version of usearch (e.g. version 11) | https://www.drive5.com/usearch/download.html | make usearch is executable by running the following line:
 chmod 775 usearch*
+mv usearch* bin/
 ```
 
 In addition, you should download the following customized databases:
