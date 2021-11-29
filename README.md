@@ -13,15 +13,13 @@ The workflow contains 6 wrappers dealing with the following steps:
 
 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
--- Required packages
+--- Required packages:
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
 conda install -c bioconda bbmap 
 conda install -c bioconda fastq-pair 
 conda install -c bioconda spades  
-conda install -c bioconda nanofilt
-conda install -c bioconda blast
 ```
 
 2) QC of assembled contigs + vOTUs labeling
