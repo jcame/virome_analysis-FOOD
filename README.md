@@ -38,32 +38,25 @@ usearch############
 
 4) Bacterial host-prediction of vOTUs
 
+--- Required packages:
 ```
 usearch############
 ```
 
 5) vOTUs abundance stats
 
+--- Required packages:
 ```
-conda install -c bioconda trimmomatic
-conda install -c bioconda seqkit 
-conda install -c bioconda bbmap 
-conda install -c bioconda fastq-pair 
-conda install -c bioconda spades  
-conda install -c bioconda nanofilt
-conda install -c bioconda blast
-```
+conda install -c bioconda bowtie 
+conda install -c bioconda samtools
+
+
 
 6) Integrated results
 
+--- Required packages:
 ```
-conda install -c bioconda trimmomatic
-conda install -c bioconda seqkit 
-conda install -c bioconda bbmap 
-conda install -c bioconda fastq-pair 
-conda install -c bioconda spades  
-conda install -c bioconda nanofilt
-conda install -c bioconda blast
+
 ```
 
 
