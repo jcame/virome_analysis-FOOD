@@ -14,7 +14,7 @@ To implement the workflow, clone this repository:
 git clone https://github.com/jcame/virome_analysis-FOOD.git
 ```
 
-Then install the following dependencies
+Then install the following dependencies:
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
@@ -33,7 +33,7 @@ chmod 775 usearch*
 mv usearch* bin/
 ```
 
-In addition, you should download the following customized databases:
+In addition, you should also download the following customized databases:
 
 - Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from Anelloviruses (Circoviridae) derived from our recent pre-print Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
 ```
