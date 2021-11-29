@@ -12,7 +12,6 @@ To be able to implementing this workflow you will need access to:
 The workflow contains 6 wrappers dealing with the following steps:
 
 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
-
 --- Required packages:
 ```
 conda install -c bioconda trimmomatic
@@ -23,7 +22,7 @@ conda install -c bioconda spades
 ```
 
 2) QC of assembled contigs + vOTUs labeling
-
+--- Required packages:
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
