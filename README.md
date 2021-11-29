@@ -5,14 +5,15 @@
 This is a respository that contains a general workflow for virome analyses at UCPH-FOOD.
 To be able to implementing this workflow you will need access to:
 
-- Access to a UNIX-like environment terminal (w/ administrator rights)
-- R-base
-
+- UNIX-like terminal/Linux (w/ administrator rights)
+- :: Anaconda version 3
+- R-base version 4.1.1 or higher | including tidyverse package
 
 The workflow contains 6 wrappers dealing with the following steps:
 
-1) Fastq QC + reads labeling + de-novo assembly
+1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
+Required packages
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
