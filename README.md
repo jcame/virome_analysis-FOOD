@@ -11,8 +11,6 @@ To be able to implementing this workflow you will need access to:
 
 To implement the workflow, you will have to install the following dependencies and create a "bin" directory:
 ```
-mkdir bin
-
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
 conda install -c bioconda bbmap 
