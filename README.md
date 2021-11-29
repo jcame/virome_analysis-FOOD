@@ -55,7 +55,7 @@ LINk2
 
 #### 2) QC of assembled contigs + vOTUs labeling
 
-*This step relies on VirSorter2, our benchmark shows that it outcompete any other tool, as we report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
+*This step uses solely VirSorter2 as QC of viral contigs (medium-quality and above), our benchmark shows that it outcompete any other tool, as we report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
 
 #### 3) Taxonomy annotation of vOTUs
 
