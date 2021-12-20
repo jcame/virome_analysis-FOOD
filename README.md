@@ -70,7 +70,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 4) Bacterial host-prediction of vOTUs
 
-- *This step searches (blastn) CRISPRs spacers + tRNAs derived from metagenome assemblies. Similar to Step 3, for each viral genome the identified genomic regions matching (CRISPRs spacers + tRNAs) are subjected to voting-consensus LCA system (winner-gets-it-all). 
+- *This step searches (blastn) CRISPRs spacers + tRNAs derived from metagenome assemblies. Similar to Step 3, for each viral genome the identified genomic regions matching (CRISPRs spacers + tRNAs) are subjected to voting-consensus LCA system (winner-gets-it-all) –– NOT bechmarked YET available, but it will come soon*
 
 #### 5) vOTUs abundance stats
 
