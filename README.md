@@ -30,7 +30,7 @@ virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 
 
 ```
 
-Clone this repository & copy wrappers into the vaplinev2 bin
+Clone this repository & copy dependencies into the vaplinev2 bin
 ```
 git clone https://github.com/jcame/virome_analysis-FOOD.git
 cd virome_analysis-FOOD/
@@ -41,8 +41,6 @@ cd ..
 rm -r virome_analysis-FOOD.git
 
 ```
-
-
 
 In addition, you should also download the following Vapline's customized databases:
 
@@ -108,5 +106,5 @@ Next,
 
 
 
-# Note: At this moment the pipeline is based on bash wrappers, but I do hope to provide a conda environment for easier deployment (just need to find the time).
+# Note: At this moment the pipeline is not functional - is not yet setup.
 
