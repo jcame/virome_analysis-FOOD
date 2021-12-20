@@ -58,11 +58,15 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
+
+
 #### 2) QC of assembled contigs + vOTUs labeling
 
-- *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV), our benchmark shows that VirSorter2 outcompetes any other tool, as we recently report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
+- *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV | viralquality ≥ 0.66), our benchmark shows that VirSorter2 outcompetes any other viral genome tool, as we recently report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
 
 #### 3) Taxonomy annotation of vOTUs
+
+- *This step uses predicts ORF and compare them against VOGs + Anelloviruses (Circoviridae) ,  *
 
 #### 4) Bacterial host-prediction of vOTUs
 
