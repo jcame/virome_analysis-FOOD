@@ -30,10 +30,18 @@ virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 
 
 ```
 
-Then clone this repository:
+Clone this repository & copy wrappers into the vaplinev2 bin
 ```
 git clone https://github.com/jcame/virome_analysis-FOOD.git
+cd virome_analysis-FOOD/
+chmod 755 *sh
+
+cp *sh $CONDA_PREFIX
+cd ..
+rm -r virome_analysis-FOOD.git
+
 ```
+
 
 
 In addition, you should also download the following Vapline's customized databases:
