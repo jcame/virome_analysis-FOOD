@@ -58,7 +58,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
-
+- *Quality control of unassembled reads, deconvoluting phi-X174 reads, dereplicating reads, finding paired- & unpaired- reads, and de-novo assembly*
 
 #### 2) QC of assembled contigs + vOTUs labeling
 
