@@ -9,13 +9,13 @@ To be able to implementing this workflow you will need access to:
 - :: Anaconda version 3
 - R-base version 4.1.1 or higher | make sure the "tidyverse" package is installed
 
-### To implement the workflow create first a conda environment, and activate it:
+#### To implement the workflow create first a conda environment, and activate it:
 ```
 conda create --name vaplinev2
 conda activate vaplinev2
 ```
 
-### Install the following dependencies:
+#### Install the following dependencies:
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
@@ -30,7 +30,7 @@ virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 
 
 ```
 
-### Clone this repository & copy dependencies into the vaplinev2 bin
+#### Clone this repository & copy dependencies into the vaplinev2 bin
 ```
 git clone https://github.com/jcame/virome_analysis-FOOD.git
 cd virome_analysis-FOOD/
@@ -42,7 +42,7 @@ rm -r virome_analysis-FOOD.git
 
 ```
 
-### In addition, you should also download the following Vapline's customized databases:
+#### In addition, you should also download the following Vapline's customized databases:
 
 - Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from *Anelloviruses* (*Circoviridae*) derived from our recent pre-print Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
 ```
@@ -65,27 +65,27 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 ## The workflow contains 6 steps, below a brief description of their rationale:
 
-#### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
+##### 1) Fastq QC + reads labeling + dereplicating + identifying sequence pairs + de-novo assembly
 
 - *Quality control of unassembled reads, deconvoluting phi-X174 reads, dereplicating reads, finding paired- & unpaired- reads, and de-novo assembly*
 
-#### 2) QC of assembled contigs + vOTUs labeling
+##### 2) QC of assembled contigs + vOTUs labeling
 
 - *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV | viralquality ≥ 0.66), our benchmark shows that VirSorter2 outcompetes any other viral genome tool, as we recently reported in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
 
-#### 3) Taxonomy annotation of vOTUs
+##### 3) Taxonomy annotation of vOTUs
 
 - *Predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes. This is a fast (greedy indeed) system, but it shows high-performance for predicting high taxonomy levels*
 
-#### 4) Bacterial host-prediction of vOTUs
+##### 4) Bacterial host-prediction of vOTUs
 
 - *Searches (blastn) CRISPRs spacers + tRNAs derived from metagenome assemblies. Similar to Step 3, for each viral genome the identified genomic regions matching (CRISPRs spacers + tRNAs) are subjected to voting-consensus LCA system (winner-gets-it-all) –– NOT bechmarked YET available, but it will come soon*
 
-#### 5) vOTUs abundance stats
+##### 5) vOTUs abundance stats
 
 - *Maps unassembled reads to viral genomes (viral contigs) using Bowtie2, it creates BAM files (storing sequence alignment data) and extract number of reads mapping each viral genome within every sample. Then, aligments for every sample are converted into an abundance table of vOTUs*
 
-#### 6) Integrated results
+##### 6) Integrated results
 
 - *Normalizes RPKM on vOTU-tables and integrates host-taxonomy + viral-taxonomy on files ready to load in R (e.g. Phyloseq) or Qiime2*
 
