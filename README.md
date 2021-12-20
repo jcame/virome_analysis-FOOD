@@ -9,13 +9,13 @@ To be able to implementing this workflow you will need access to:
 - :: Anaconda version 3
 - R-base version 4.1.1 or higher | make sure the "tidyverse" package is installed
 
-To implement the workflow create first a conda environment, and activate it:
+### To implement the workflow create first a conda environment, and activate it:
 ```
 conda create --name vaplinev2
 conda activate vaplinev2
 ```
 
-Install the following dependencies:
+### Install the following dependencies:
 ```
 conda install -c bioconda trimmomatic
 conda install -c bioconda seqkit 
@@ -30,7 +30,7 @@ virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 
 
 ```
 
-Clone this repository & copy dependencies into the vaplinev2 bin
+### Clone this repository & copy dependencies into the vaplinev2 bin
 ```
 git clone https://github.com/jcame/virome_analysis-FOOD.git
 cd virome_analysis-FOOD/
@@ -42,7 +42,7 @@ rm -r virome_analysis-FOOD.git
 
 ```
 
-In addition, you should also download the following Vapline's customized databases:
+### In addition, you should also download the following Vapline's customized databases:
 
 - Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from *Anelloviruses* (*Circoviridae*) derived from our recent pre-print Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
 ```
