@@ -74,7 +74,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 5) vOTUs abundance stats
 
-- *This step maps unassembled reads to viral genomes (viral contigs) using Bowtie2, it creates BAM files (storing sequence alignment data) and extract number of reads mapping each viral genome within every sample. Then based on tidyverse, aligments for every sample are converted into an abundance table of vOTUs*
+- *This step maps unassembled reads to viral genomes (viral contigs) using Bowtie2, it creates BAM files (storing sequence alignment data) and extract number of reads mapping each viral genome within every sample. Then, aligments for every sample are converted into an abundance table of vOTUs*
 
 #### 6) Integrated results
 
