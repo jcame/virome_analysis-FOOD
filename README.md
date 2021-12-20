@@ -24,13 +24,9 @@ conda install -c bioconda spades
 conda install -c bioconda seqtk
 conda install -c bioconda virsorter 
 virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 22 cores | modify accordingly | this will generate ~13 GB of data
-
 conda install -c bioconda bowtie 
 conda install -c bioconda samtools
 
-usearch  #Download the free version of usearch (e.g. version 11) | https://www.drive5.com/usearch/download.html | make usearch is executable by running the following line:
-chmod 775 usearch*
-mv usearch* bin/
 ```
 
 In addition, you should also download the following Vapline's customized databases:
