@@ -62,13 +62,15 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 2) QC of assembled contigs + vOTUs labeling
 
-- *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV | viralquality ≥ 0.66), our benchmark shows that VirSorter2 outcompetes any other viral genome tool, as we recently report in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
+- *This step uses solely VirSorter2 as QC of viral contigs ("full" categories | dsDNAphage, ssDNA,  RNA, Lavidaviridae, NCLDV | viralquality ≥ 0.66), our benchmark shows that VirSorter2 outcompetes any other viral genome tool, as we recently reported in Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849)*
 
 #### 3) Taxonomy annotation of vOTUs
 
-- *This step uses predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes*
+- *This step predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes. This is a fast (greedy indeed) system, but it works at high taxonomy levels*
 
 #### 4) Bacterial host-prediction of vOTUs
+
+- *This step predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes. This is a fast (greedy indeed) system, but it works at high taxonomy levels*
 
 #### 5) vOTUs abundance stats
 
