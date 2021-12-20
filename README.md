@@ -78,7 +78,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 6) Integrated results
 
-- *Normalizes RPKM on vOTU-tables and integrate host-taxonomy + viral taxonomy on files ready to load in R (e.g. Phyloseq) or Qiime2*
+- *Normalizes RPKM on vOTU-tables and integrates host-taxonomy + viral-taxonomy on files ready to load in R (e.g. Phyloseq) or Qiime2*
 
 # 
 # 
