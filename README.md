@@ -66,19 +66,19 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 3) Taxonomy annotation of vOTUs
 
-- *This step predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes. This is a fast (greedy indeed) system, but it shows high-performance for predicting high taxonomy levels*
+- *Predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes. This is a fast (greedy indeed) system, but it shows high-performance for predicting high taxonomy levels*
 
 #### 4) Bacterial host-prediction of vOTUs
 
-- *This step searches (blastn) CRISPRs spacers + tRNAs derived from metagenome assemblies. Similar to Step 3, for each viral genome the identified genomic regions matching (CRISPRs spacers + tRNAs) are subjected to voting-consensus LCA system (winner-gets-it-all) –– NOT bechmarked YET available, but it will come soon*
+- *Searches (blastn) CRISPRs spacers + tRNAs derived from metagenome assemblies. Similar to Step 3, for each viral genome the identified genomic regions matching (CRISPRs spacers + tRNAs) are subjected to voting-consensus LCA system (winner-gets-it-all) –– NOT bechmarked YET available, but it will come soon*
 
 #### 5) vOTUs abundance stats
 
-- *This step maps unassembled reads to viral genomes (viral contigs) using Bowtie2, it creates BAM files (storing sequence alignment data) and extract number of reads mapping each viral genome within every sample. Then, aligments for every sample are converted into an abundance table of vOTUs*
+- *Maps unassembled reads to viral genomes (viral contigs) using Bowtie2, it creates BAM files (storing sequence alignment data) and extract number of reads mapping each viral genome within every sample. Then, aligments for every sample are converted into an abundance table of vOTUs*
 
 #### 6) Integrated results
 
-- *This step maps unassembled reads to viral genomes (viral contigs) using Bowtie2, it creates BAM files (storing sequence alignment data) and extract number of reads mapping each viral genome within every sample. Then based on tidyverse, aligments for every sample are converted into an abundance table of vOTUs*
+- *Normalizes RPKM on vOTU-tables and integrate host-taxonomy + viral taxonomy on files ready to load in R (e.g. Phyloseq) or Qiime2*
 
 # 
 # 
