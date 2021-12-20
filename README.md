@@ -23,10 +23,10 @@ conda install -c bioconda bbmap
 conda install -c bioconda fastq-pair 
 conda install -c bioconda spades  
 conda install -c bioconda seqtk
-conda install -c bioconda virsorter 
-virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 22 cores | modify accordingly | this will generate ~13 GB of data
 conda install -c bioconda bowtie 
 conda install -c bioconda samtools
+conda install -c bioconda virsorter 
+virsorter setup -d db -j 22 # this will install the required databases, -j 22 = 22 cores | modify accordingly | this will generate ~13 GB of data
 
 ```
 
