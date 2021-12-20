@@ -35,7 +35,7 @@ mv usearch* bin/
 
 In addition, you should also download the following Vapline's customized databases:
 
-- Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from Anelloviruses (Circoviridae) derived from our recent pre-print Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
+- Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from *Anelloviruses* (*Circoviridae*) derived from our recent pre-print Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
 ```
 wget https://www.dropbox.com/s/k0cmufct7ewxxt8/vog.lca_206_anello.fa?dl=0  ; mv vog.lca_206_anello.fa?dl=0   bin/vog.lca_206_anello.fa
 wget https://www.dropbox.com/s/ffppwuhiurkh0l6/vog.lca_206_anello.tsv?dl=0 ; mv vog.lca_206_anello.tsv?dl=0  bin/vog.lca_206_anello.tsv
@@ -70,7 +70,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 #### 4) Bacterial host-prediction of vOTUs
 
-- *This step predicts ORF and compare them against VOGs-NCBI + Anelloviruses (Circoviridae), for each viral genome the annotated proteins/genes are subjected to voting-consensus LCA system (winner-gets-it-all). In our in-house benchmark, we have obtained satifactory results in providing taxonomy (order level) to Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) viral genomes. This is a fast (greedy indeed) system, but it works at high taxonomy levels*
+- *This step searches (blastn) CRISPRs spacers + tRNAs derived from metagenome assemblies. Similar to Step 3, for each viral genome the identified genomic regions matching (CRISPRs spacers + tRNAs) are subjected to voting-consensus LCA system (winner-gets-it-all). 
 
 #### 5) vOTUs abundance stats
 
