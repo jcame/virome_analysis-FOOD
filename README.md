@@ -108,6 +108,19 @@ wget https://www.dropbox.com/s/mmpa91s777vf5l4/NXT062_IDA222_S222_R1_001.fastq?d
 wget https://www.dropbox.com/s/f3o21j2qiw0sz3a/NXT062_IDA222_S222_R2_001.fastq?dl=0 ; mv NXT062_IDA222_S222_R2_001.fastq?dl=0 NXT062_IDA222_S222_R2_001.fastq
 ```
 
+Move each pair of file per sample into one folder
+
+```
+mkdir folder_10001
+mv NXT062_IDA221_S221_R1_001.fastq folder_10001
+mv NXT062_IDA221_S221_R2_001.fastq folder_10001
+
+mkdir folder_10002
+mv NXT062_IDA222_S222_R1_001.fastq folder_10002
+mv NXT062_IDA222_S222_R2_001.fastq folder_10002
+
+```
+
 Next, 
 
 
