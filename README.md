@@ -130,10 +130,17 @@ folder_10001	folder_10002
 
 ```
 
-Run the 1st script
+Execute the 1st script. This will generat: 
+contigs* containing XXX
+reads* containing XXX
+
 
 ```
 01_formating_QC-reads.sh 
+
+ls 
+NXT062_IDA221_S221_R1_001.fastq			contigs_NXT062.IDA221.S221.R1.001.fastq.fa
+NXT062_IDA221_S221_R2_001.fastq			reads_NXT062.IDA221.S221.R1.001.fastq.fa
 
 ```
 
