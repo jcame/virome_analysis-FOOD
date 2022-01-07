@@ -131,8 +131,7 @@ folder_10001	folder_10002
 ```
 
 ## 1) Execute the 1st script. 
-*This will generate: contigs* containing XXX, and reads* containing XXX*
-
+*This will generate: contigsXXX (containing contigs with >2200 bp), and high-quality readsXXX (containing all sample reads in fasta format)*
 
 ```
 01_formating_QC-reads.sh 
