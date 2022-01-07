@@ -130,9 +130,7 @@ folder_10001	folder_10002
 
 ```
 
-Execute the 1st script. This will generat: 
-contigs* containing XXX
-reads* containing XXX
+##### 1) Execute the 1st script. This will generate: contigs* containing XXX, and reads* containing XXX
 
 
 ```
