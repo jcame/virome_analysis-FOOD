@@ -65,6 +65,7 @@ wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_
 
 mkdir $CONDA_PREFIX/bin/Abin
 cp -r bin/ $CONDA_PREFIX/bin/Abin
+rm -r bin
 
 
 ```
