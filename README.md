@@ -122,9 +122,20 @@ mv NXT062_IDA222_S222_R2_001.fastq folder_10002
 
 ```
 
-Next, 
+While being in the directory with all folders*
 
+```
+(vaplinev2) paposx$ ls
+folder_10001	folder_10002
 
+```
+
+Run the 1st script
+
+```
+(vaplinev2) paposx$ 01_formating_QC-reads.sh 
+
+```
 
 
 # Note: At this moment the pipeline is not functional - is not yet setup.
