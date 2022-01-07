@@ -36,7 +36,7 @@ git clone https://github.com/jcame/virome_analysis-FOOD.git
 cd virome_analysis-FOOD/
 chmod 755 *sh
 
-cp *sh $CONDA_PREFIX
+cp *sh $CONDA_PREFIX/bin
 cd ..
 rm -r virome_analysis-FOOD.git
 
