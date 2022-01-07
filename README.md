@@ -46,6 +46,8 @@ rm -r virome_analysis-FOOD
 
 - Modified DB of Viral Orthologous Groups (VOGs | https://vogdb.org/) + proteins from *Anelloviruses* (*Circoviridae*) derived from our recent pre-print Shah et al. 2021 (https://doi.org/10.1101/2021.07.02.450849) 
 ```
+mkdir bin
+
 wget https://www.dropbox.com/s/k0cmufct7ewxxt8/vog.lca_206_anello.fa?dl=0  ; mv vog.lca_206_anello.fa?dl=0   bin/vog.lca_206_anello.fa
 wget https://www.dropbox.com/s/ffppwuhiurkh0l6/vog.lca_206_anello.tsv?dl=0 ; mv vog.lca_206_anello.tsv?dl=0  bin/vog.lca_206_anello.tsv
 ```
