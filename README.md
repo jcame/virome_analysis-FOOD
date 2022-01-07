@@ -125,7 +125,7 @@ mv NXT062_IDA222_S222_R2_001.fastq folder_10002
 While being in the directory with all folders*
 
 ```
-(vaplinev2) paposx$ ls
+ls
 folder_10001	folder_10002
 
 ```
@@ -133,7 +133,7 @@ folder_10001	folder_10002
 Run the 1st script
 
 ```
-(vaplinev2) paposx$ 01_formating_QC-reads.sh 
+01_formating_QC-reads.sh 
 
 ```
 
