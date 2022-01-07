@@ -38,7 +38,7 @@ chmod 755 *sh
 
 cp *sh $CONDA_PREFIX/bin
 cd ..
-rm -r virome_analysis-FOOD.git
+rm -r virome_analysis-FOOD
 
 ```
 
