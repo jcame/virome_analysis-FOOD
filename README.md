@@ -62,6 +62,11 @@ wget https://www.dropbox.com/s/nmeovezthplrc6e/CALM-CS-SEGARA_DB_merged.txt?dl=0
 ```
 wget https://www.dropbox.com/s/icq13e935kicrz5/NexteraPE-PE.fa?dl=0    ; mv NexteraPE-PE.fa?dl=0   bin/NexteraPE-PE.fa
 wget https://www.dropbox.com/s/qgk09l2w6vg82re/phi_X174_phage.fa?dl=0  ; mv phi_X174_phage.fa?dl=0 bin/phi_X174_phage.fa
+
+mkdir $CONDA_PREFIX/bin/Abin
+cp -r bin/ $CONDA_PREFIX/bin/Abin
+
+
 ```
 
 
