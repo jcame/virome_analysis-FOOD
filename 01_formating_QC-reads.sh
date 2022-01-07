@@ -15,7 +15,7 @@ string2=$(sed "-es/_/./g" <<< $string1)
 string3=$(sed "-es/.R1.fastq//g" <<< $string2)
 echo ${string3}
 
-trimmomatic PE -threads 4 -phred33 *R1* *R2* PF1.fq UF1.fq PF2.fq UF2.fq ILLUMINACLIP:/media/server/JOSUE/vapline_v2_database/bin/NexteraPE-PE.fa:2:30:10 LEADING:20 TRAILING:20 MINLEN:50
+trimmomatic PE -threads 4 -phred33 *R1* *R2* PF1.fq UF1.fq PF2.fq UF2.fq ILLUMINACLIP:$CONDA_PREFIX/bin/Abin/NexteraPE-PE.fa:2:30:10 LEADING:20 TRAILING:20 MINLEN:50
 cat PF1.fq UF1.fq > forward.fq
 cat PF2.fq UF2.fq > reverse.fq
 rm PF1.fq 
@@ -28,8 +28,8 @@ seqkit rmdup reverse.fq -s -o DPF2.fq -j 4
 rm forward.fq
 rm reverse.fq
 
-bbduk.sh in=DPF1.fq out=forward.fq  ref=/media/server/JOSUE/vapline_v2_database/bin/phi_X174_phage.fa k=31 hdist=1
-bbduk.sh in=DPF2.fq out=reverse.fq  ref=/media/server/JOSUE/vapline_v2_database/bin/phi_X174_phage.fa k=31 hdist=1
+bbduk.sh in=DPF1.fq out=forward.fq  ref=$CONDA_PREFIX/bin/Abin/phi_X174_phage.fa k=31 hdist=1
+bbduk.sh in=DPF2.fq out=reverse.fq  ref=$CONDA_PREFIX/bin/Abin/phi_X174_phage.fa k=31 hdist=1
 rm DPF1.fq
 rm DPF2.fq
 
