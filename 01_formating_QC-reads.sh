@@ -1,6 +1,3 @@
-#formatting
-
-
 for dir in folder*
 do
 cd $dir
@@ -50,31 +47,7 @@ cat forward.fq.paired.fq reverse.fq.paired.fq  unpaired.fq | seqtk seq -a  | cut
 rm *fq
 rm tmp
 
-
 done)
-
-
-
-
 
 cd ..
 done
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
